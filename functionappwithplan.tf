@@ -24,5 +24,12 @@ resource "azurerm_windows_function_app" "fnapp" {
   site_config {
     
   }
+  auth_settings {
+    enabled = "true"
+    unauthenticated_client_action = "RedirectToLoginPage"
+    active_directory {
+      client_id = var.azuread_client_id
+    }
+  }
 }
 

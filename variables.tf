@@ -13,3 +13,7 @@ variable "function_app_name" {
 variable "app_service_plan_name" {
     description = "Name of app services plan (not globally unique)"
 }
+
+variable "azuread_client_id" {
+    description = "Azure AD client ID used for app services authentication"
+}
