@@ -1,4 +1,4 @@
-Azure Function app - basic deployment with Terraform
+Azure Static Web App with Function app backend and CosmosDB storage - basic deployment with Terraform
 
 ```
 az login
